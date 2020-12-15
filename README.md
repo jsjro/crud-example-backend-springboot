@@ -28,6 +28,13 @@ The back-end is using an [PostgreSQL database](https://www.postgresql.org) behin
 + Java 11
 + Maven 3
 
+### Dependency
+
++ springboot-web
++ springboot-data-jpa
++ swagger2
++ postgresql
+
 ### Run Spring Boot application
 
 ```
