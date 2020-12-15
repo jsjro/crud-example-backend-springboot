@@ -2,19 +2,19 @@
 
 ## Introduction
 
-This is a web server made with Java 11.
+CRUD REST api server
 
 ### Available resources
 
 The following resources are available:
 
-+ ``GET /api/posts`` (``JSON``)
-+ ``POST /api/posts``
-+ ``DELETE /api/posts``
-+ ``GET /api/posts/:id`` (``JSON``)
-+ ``PUT /api/posts/:id``
-+ ``DELETE /api/posts/:id``
-+ ``GET /api/posts/published`` (``JSON``)
++ ``GET /api/posts`` (``JSON``) : getAllPosts
++ ``GET /api/posts/:id`` (``JSON``) : getPostById
++ ``POST /api/posts`` : createPost
++ ``PUT /api/posts/:id`` : updatePost
++ ``DELETE /api/posts/:id`` : deletePost
++ ``DELETE /api/posts`` : deleteAllPosts
++ ``GET /api/posts/status`` (``JSON``) : findByStatus
 
 ### Back-end
 
@@ -28,9 +28,12 @@ The back-end is using an [PostgreSQL database](https://www.postgresql.org) behin
 + Java 11
 + Maven 3
 
-Just clone this project and execute ``mvn package``.
-Then, go to the ``target``folder and execute ``java -jar crudExampleBackendSpringboot-0.0.1-SNAPSHOT.jar``.
+### Run Spring Boot application
 
-### Swagger UI
+```
+mvn spring-boot:run
+```
+
+### Connected Swagger UI
 
 + ``http://localhost:8080/swagger-ui.html``
