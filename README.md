@@ -18,7 +18,7 @@ The following resources are available:
 
 ### Back-end
 
-The back-end is using an [PostgreSQL database](https://www.postgresql.org) behind to store the tutorial.
+The back-end is using an [PostgreSQL database](https://www.postgresql.org) behind to store the post.
 
 ## How to build and execute it
 
@@ -28,7 +28,8 @@ The back-end is using an [PostgreSQL database](https://www.postgresql.org) behin
 + Java 11
 + Maven 3
 
-Just clone this project and execute ``mvn package``. Then, go to the ``target``folder and execute ``java -jar crudExampleBackendSpringboot-0.0.1-SNAPSHOT.jar``.
+Just clone this project and execute ``mvn package``.
+Then, go to the ``target``folder and execute ``java -jar crudExampleBackendSpringboot-0.0.1-SNAPSHOT.jar``.
 
 ### Swagger UI
 
