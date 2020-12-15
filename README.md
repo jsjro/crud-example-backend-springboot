@@ -8,13 +8,13 @@ This is a web server made with Java 11.
 
 The following resources are available:
 
-+ ``GET /v1/tutorials`` (``JSON``)
-+ ``POST /v1/tutorials``
-+ ``DELETE /v1/tutorials``
-+ ``GET /v1/tutorials/:id`` (``JSON``)
-+ ``PUT /v1/tutorials/:id``
-+ ``DELETE /v1/tutorials/:id``
-+ ``GET /v1/tutorials/published`` (``JSON``)
++ ``GET /api/posts`` (``JSON``)
++ ``POST /api/posts``
++ ``DELETE /api/posts``
++ ``GET /api/posts/:id`` (``JSON``)
++ ``PUT /api/posts/:id``
++ ``DELETE /api/posts/:id``
++ ``GET /api/posts/published`` (``JSON``)
 
 ### Back-end
 
@@ -29,3 +29,7 @@ The back-end is using an [PostgreSQL database](https://www.postgresql.org) behin
 + Maven 3
 
 Just clone this project and execute ``mvn package``. Then, go to the ``target``folder and execute ``java -jar crudExampleBackendSpringboot-0.0.1-SNAPSHOT.jar``.
+
+### Swagger UI
+
++ ``http://localhost:8080/swagger-ui.html``

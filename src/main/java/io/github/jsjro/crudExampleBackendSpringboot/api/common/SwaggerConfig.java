@@ -17,7 +17,7 @@ public class SwaggerConfig {
     @Bean
     public Docket swaggerApi() {
         return new Docket(DocumentationType.SWAGGER_2).apiInfo(swaggerInfo()).select()
-                .apis(RequestHandlerSelectors.basePackage("io.github.jsjro.crudExampleBackendSpringboot.api.rest.tutorial.controller"))
+                .apis(RequestHandlerSelectors.basePackage("io.github.jsjro.crudExampleBackendSpringboot.api.rest.post.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .useDefaultResponseMessages(false);
